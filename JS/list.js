@@ -16,7 +16,7 @@ mainForm.addEventListener('submit', function (e) {
 
 
   newTask.innerHTML = `
-  <p onclick="taskDone(event)">${data.TASK}</p>
+  <p id="myP" onclick="taskDone(event)">${data.TASK}</p>
   <button onclick="deleteTask(event)">Cancella</button>
   `
   const sectionForTask = document.getElementById('saved-task') 
@@ -28,12 +28,11 @@ mainForm.addEventListener('submit', function (e) {
 
 const deleteTask = (e) => {
   const clickButton = e.target
+  
   clickButton.parentElement.remove()
 }
 
 const taskDone = (e) => {
-  const clickP = e.target
-  let textTask = document.querySelector('.task-add p')
-  textTask.style.textDecoration = 'line-through'
-  
+  const tag1 = e.target
+  tag1.style.textDecoration = 'line-through'
 }
