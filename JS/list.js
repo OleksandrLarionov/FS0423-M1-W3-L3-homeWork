@@ -28,8 +28,12 @@ mainForm.addEventListener('submit', function (e) {
 
 const deleteTask = (e) => {
   const clickButton = e.target
+  const remuveVery = confirm('Are you Sure?')
+  if (remuveVery){
+
+    clickButton.parentElement.remove()
+  }
   
-  clickButton.parentElement.remove()
 }
 
 const taskDone = (e) => {
