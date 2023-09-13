@@ -14,11 +14,7 @@ body {
 	background-repeat: no-repeat;
 	height: 100vh;
 }
-.container {
-}
 /* IL mio menu */
-header nav {
-}
 nav ul li {
 	list-style: none;
 	display: inline;
@@ -33,6 +29,18 @@ nav ul li a {
 
 /* Da Qua parte il main */
 
+#title {
+	background: linear-gradient(
+		173deg,
+		rgba(138, 113, 25, 0.993) 29%,
+		rgba(138, 113, 25, 0.7637429971988796) 84%
+	);
+	margin: 15px;
+	margin-right: 90px;
+}
+#title h1 {
+	padding: 3px;
+}
 main {
 	width: 900px;
 	margin: 30px auto 30px auto;
@@ -46,8 +54,17 @@ form {
 	display: inline-block;
 }
 
-.main-task {
+#main-task {
 	display: inline-block;
+	margin: 15px;
+	height: 135px;
+	width: 797px;
+	background: linear-gradient(
+		173deg,
+		rgba(153, 148, 48, 0.9934348739495799) 24%,
+		rgba(177, 149, 52, 0.06486344537815125) 93%
+	);
+	border-radius: 10px 10px 10px 70px;
 }
 
 form label {
